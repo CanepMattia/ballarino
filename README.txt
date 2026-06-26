@@ -29,7 +29,9 @@ FOTO (reali, dal sito attuale, ottimizzate e in locale assets/img/)
   jewel.jpg       anello alta gioielleria (perla+diamanti+rubini) -> HERO
   argenteria.jpg  composizione in argento                          -> Collezioni
   chevallier.jpg  anello sigillo con stemma Real Casa Savoia        -> Royal Warrant
-  logo.png        marchio Ballarino coi brevetti delle Case Reali   -> La Storia
+  logo.png        marchio Ballarino coi brevetti delle Case Reali   -> Hero / La Storia
+  laboratorio.jpg diamante esaminato con pinzetta e lente            -> Laboratorio Gemmologico
+  savoy.jpg       tiara di diamanti su fondo nero                    -> Savoy Line
 
 FUNZIONI
   - Form contatti (apre l'app email a info@ballarinogioielli.com, precompilato)

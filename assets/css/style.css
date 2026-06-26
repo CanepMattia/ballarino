@@ -134,8 +134,7 @@ p{margin:0 0 1.1rem}
 .warrant-list--light{background:var(--line);border-color:var(--line-dk)}
 .warrant-list--light li{background:var(--paper-2);color:var(--ink)}
 .warrant-list--light li span{color:var(--gold)}
-.split-media--emblem .emblem-icon{width:min(150px,40%);height:auto;color:var(--gold)}
-.stats--center{justify-content:center;text-align:center}
+.split-media--tall{aspect-ratio:3/4;background:#0f0d0a;border-color:var(--line-dk)}
 
 /* ---------- striscia credenziali ---------- */
 .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper)}
