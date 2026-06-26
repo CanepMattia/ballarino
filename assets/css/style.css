@@ -187,9 +187,12 @@ p{margin:0 0 1.1rem}
 
 /* ---------- mappa ---------- */
 .foot-map{margin-top:3.5rem}
-.foot-map iframe{display:block;width:100%;height:320px;border:1px solid var(--line);
-  filter:grayscale(.55) sepia(.12) contrast(1.02);transition:filter .4s var(--ease)}
-.foot-map:hover iframe{filter:none}
+.foot-map__canvas{width:100%;height:340px;border:1px solid var(--line);background:var(--paper-2);z-index:0}
+.foot-map__canvas .leaflet-container{height:100%;width:100%;background:var(--paper-2);font-family:inherit}
+.foot-map__canvas .leaflet-div-icon{background:none;border:none}
+.foot-map__canvas .gold-pin svg{filter:drop-shadow(0 3px 4px rgba(60,45,15,.4))}
+.foot-map__canvas .leaflet-bar a{color:var(--ink);border-color:var(--line)}
+.foot-map__canvas .leaflet-control-attribution{background:rgba(250,248,243,.78);font-size:.62rem}
 .foot-map__link{display:inline-block;margin-top:.9rem;font-size:.72rem;letter-spacing:.16em;
   text-transform:uppercase;color:var(--gold);text-decoration:none}
 .foot-map__link:hover{color:var(--ink)}
