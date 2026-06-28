@@ -86,16 +86,18 @@ p{margin:0 0 1.1rem}
   backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
   transition:background .4s var(--ease),box-shadow .4s var(--ease)}
 .site-header.scrolled{background:rgba(250,248,243,.94);box-shadow:0 10px 30px -24px rgba(60,45,15,.5)}
-.bar{display:flex;align-items:center;justify-content:space-between;height:84px;
+.site-header .wrap{max-width:1320px}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:clamp(1.5rem,4vw,3rem);height:84px;
   transition:height .4s var(--ease)}
+.brand{flex:none}
 .site-header.scrolled .bar{height:68px}
 .brand{display:flex;flex-direction:column;text-decoration:none;line-height:1}
 .brand b{font-family:"Fraunces",serif;font-weight:600;font-size:1.5rem;letter-spacing:.22em;color:var(--ink);
   transition:font-size .4s var(--ease)}
 .site-header.scrolled .brand b{font-size:1.32rem}
 .brand small{font-size:.56rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-top:7px}
-.nav{display:flex;align-items:center;gap:2.4rem}
-.nav__link{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);
+.nav{display:flex;align-items:center;gap:clamp(1.5rem,2vw,2.1rem)}
+.nav__link{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);white-space:nowrap;
   text-decoration:none;opacity:.85;position:relative;transition:opacity .25s}
 .nav__link::after{content:"";position:absolute;left:0;bottom:-7px;height:1px;width:0;background:var(--gold-grad);transition:width .35s var(--ease)}
 .nav__link:hover{opacity:1}.nav__link:hover::after{width:100%}
@@ -295,13 +297,8 @@ p{margin:0 0 1.1rem}
 .reveal.in{opacity:1;transform:none}
 
 /* ---------- mobile ---------- */
-@media (max-width:900px){
-  .hero-grid,.split,.form-wrap{grid-template-columns:1fr}
-  .hero-grid{padding-block:2.4rem 2.8rem}
-  .hero-art{order:-1;margin-bottom:.4rem}
-  .split--rev .split-media,.split-media{order:-1}
-  .coll-grid{grid-template-columns:1fr;gap:1.4rem}
-  .foot-grid{grid-template-columns:1fr;gap:2rem}
+/* menu a tendina: parte quando la nav orizzontale si fa stretta */
+@media (max-width:1120px){
   .nav-toggle{display:block}
   .nav{position:fixed;inset:84px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;
     background:var(--paper);border-bottom:1px solid var(--line);padding:.25rem 32px 1.5rem;
@@ -309,9 +306,17 @@ p{margin:0 0 1.1rem}
     opacity:0;visibility:hidden;transform:translateY(-10px);
     transition:opacity .3s var(--ease),transform .3s var(--ease),visibility .3s}
   .nav.open{opacity:1;visibility:visible;transform:translateY(0)}
-  .nav__link{padding:1rem 0;border-bottom:1px solid var(--line);font-size:.82rem}
+  .nav__link{padding:1rem 0;border-bottom:1px solid var(--line);font-size:.82rem;white-space:normal}
   .nav__link::after{display:none}
   .nav .btn{margin-top:1.2rem;justify-content:center}
+}
+@media (max-width:900px){
+  .hero-grid,.split,.form-wrap{grid-template-columns:1fr}
+  .hero-grid{padding-block:2.4rem 2.8rem}
+  .hero-art{order:-1;margin-bottom:.4rem}
+  .split--rev .split-media,.split-media{order:-1}
+  .coll-grid{grid-template-columns:1fr;gap:1.4rem}
+  .foot-grid{grid-template-columns:1fr;gap:2rem}
 }
 @media (max-width:560px){
   .hero-cta{flex-direction:column;align-items:stretch}
