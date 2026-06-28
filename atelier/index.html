@@ -6,7 +6,7 @@
 <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
 <title>Ballarino Gioielli · Cavour — Alta gioielleria, diamanti e argenteria · Fornitore della Real Casa</title>
 <meta name="description" content="Ballarino Gioielli, dal 1996 nella piazza centrale di Cavour. Alta gioielleria, diamanti, argenteria e i grandi marchi — Buccellati, Fabergé, Lalique, MeisterSinger, Junghans. Fornitore della Real Casa." />
-<meta name="theme-color" content="#0b0a11" />
+<meta name="theme-color" content="#f4f3ee" />
 <meta property="og:title" content="Ballarino Gioielli · Cavour" />
 <meta property="og:description" content="Alta gioielleria, diamanti e argenteria d'autore. Fornitore della Real Casa, dal 1996 a Cavour. Maison Buccellati, Fabergé, Lalique." />
 <meta property="og:type" content="website" />
@@ -17,7 +17,7 @@
 <link rel="apple-touch-icon" href="../assets/img/favicon.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css" />
 <link rel="preconnect" href="https://a.basemaps.cartocdn.com" crossorigin>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
@@ -46,7 +46,6 @@
 </head>
 <body id="top">
 
-<div class="spotlight" id="spotlight" aria-hidden="true"></div>
 <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -56,13 +55,25 @@
   <symbol id="ic-silver" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M16 8h16l-2 9H18z"/><path d="M18 17c-3 4-4 8-4 14h20c0-6-1-10-4-14"/><path d="M12 39h24"/></symbol>
   <symbol id="ic-loupe" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="21" cy="21" r="13"/><line x1="31" y1="31" x2="41" y2="41"/><path d="M21 14a7 7 0 0 0-7 7"/></symbol>
   <symbol id="ic-watch" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="24" cy="24" r="11"/><path d="M24 18v6l4 3M18 13l1-6h10l1 6M18 35l1 6h10l1-6"/></symbol>
-  <symbol id="ic-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></symbol>
+  <symbol id="ic-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></symbol>
 </svg>
+
+<!-- INDICE LATERALE -->
+<nav class="chapters" id="chapters" aria-label="Indice">
+  <a href="#maison"><span class="dot"></span><span class="lab">Maison</span></a>
+  <a href="#collezioni"><span class="dot"></span><span class="lab">Collezioni</span></a>
+  <a href="#creazioni"><span class="dot"></span><span class="lab">Creazioni</span></a>
+  <a href="#laboratorio"><span class="dot"></span><span class="lab">Laboratorio</span></a>
+  <a href="#warrant"><span class="dot"></span><span class="lab">Royal Warrant</span></a>
+  <a href="#savoy"><span class="dot"></span><span class="lab">Savoy Line</span></a>
+  <a href="#storia"><span class="dot"></span><span class="lab">Storia</span></a>
+  <a href="#contatti"><span class="dot"></span><span class="lab">Contatti</span></a>
+</nav>
 
 <header class="site-header">
   <div class="wrap bar">
     <a class="brand" href="#top" aria-label="Ballarino Gioielli · Cavour">
-      <b>BALLARINO</b><small>Cavour · dal 1996</small>
+      <b>Ballarino</b><small>Cavour 1996</small>
     </a>
     <nav class="nav" id="nav">
       <a class="nav__link" href="#maison">Maison</a>
@@ -71,11 +82,11 @@
       <a class="nav__link" href="#warrant">Royal Warrant</a>
       <a class="nav__link" href="#savoy">Savoy Line</a>
       <a class="nav__link" href="#storia">Storia</a>
-      <a class="btn" href="#contatti">Vieni in boutique</a>
+      <a class="btn btn--solid" href="#contatti">Boutique <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><use href="#ic-arrow"/></svg></a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Apri il menu" aria-expanded="false" aria-controls="nav">
-      <svg class="i-open" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
-      <svg class="i-close" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+      <svg class="i-open" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+      <svg class="i-close" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
     </button>
   </div>
 </header>
@@ -84,76 +95,80 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-text">
-        <span class="eyebrow">Fornitore della Real Casa</span>
-        <h1>L'eleganza che <span class="gilt">attraversa</span><br>il tempo.</h1>
-        <p class="lead">Alta gioielleria, diamanti e argenteria d'autore. Dal 1996, nella piazza
-          centrale di Cavour, custodiamo le grandi Maison e creiamo gioielli su misura.</p>
-        <div class="hero-cta">
-          <a class="btn btn--solid" href="#collezioni">Scopri le collezioni</a>
-          <a class="btn" href="#maison">Le Maison</a>
-        </div>
+    <div class="wrap">
+      <div class="hero-meta">
+        <span><b>Est.</b> 1996</span>
+        <span>Cavour · Torino</span>
+        <span>Fornitore della <b>Real Casa</b></span>
+        <span>Borsa Diamanti d'Italia</span>
       </div>
-      <div class="hero-art">
-        <div class="case">
-          <span class="case-halo" aria-hidden="true"></span>
-          <img src="../assets/img/logo.png" width="364" height="170" fetchpriority="high" alt="Marchio Ballarino Gioielli con i brevetti delle Case Reali di Savoia, Bulgaria e Portogallo">
-        </div>
+      <div class="hero-display">
+        <h1>L'eleganza che <em>attraversa</em> il tempo</h1>
       </div>
-    </div>
-  </section>
-
-  <!-- TRUST -->
-  <section class="trust" aria-label="Credenziali">
-    <div class="wrap trust-row">
-      <div class="trust-item"><svg viewBox="0 0 48 48"><use href="#ic-crown"/></svg><span>Fornitore della Real Casa</span></div>
-      <div class="trust-item"><svg viewBox="0 0 48 48"><use href="#ic-diamond"/></svg><span>Borsa Diamanti d'Italia · dal 2008</span></div>
-      <div class="trust-item"><svg viewBox="0 0 48 48"><use href="#ic-ring"/></svg><span>Creazioni e riparazioni in atelier</span></div>
-      <div class="trust-item"><svg viewBox="0 0 48 48"><use href="#ic-silver"/></svg><span>Cavour · in piazza dal 1996</span></div>
+      <div class="hero-grid">
+        <div class="hero-lead">
+          <p class="lead">Alta gioielleria, diamanti e argenteria d'autore. Dal 1996, nella piazza
+            centrale di Cavour, custodiamo le grandi Maison e creiamo gioielli su misura.</p>
+          <div class="hero-cta">
+            <a class="btn btn--solid" href="#collezioni">Scopri le collezioni <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><use href="#ic-arrow"/></svg></a>
+            <a class="btn" href="#maison">Le Maison</a>
+          </div>
+        </div>
+        <figure class="hero-img">
+          <img src="../assets/img/jewel.jpg" width="693" height="693" fetchpriority="high" alt="Anello di alta gioielleria con perla, diamanti e rubini">
+          <figcaption>Alta Gioielleria</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
   <!-- MAISON -->
   <section class="section" id="maison">
     <div class="wrap">
-      <div class="section-head section-head--center reveal">
-        <span class="eyebrow">Le Maison</span>
-        <h2>I grandi nomi, custoditi a Cavour</h2>
-        <div class="center-rule"></div>
+      <div class="section-head reveal">
+        <span class="idx">01</span>
+        <div>
+          <span class="kicker">Le Maison</span>
+          <h2>I grandi nomi, custoditi a Cavour</h2>
+        </div>
         <p class="lead">Rivenditori autorizzati di alcune fra le più prestigiose maison del mondo.</p>
       </div>
+      <ul class="maison-grid reveal">
+        <li data-n="01">Buccellati</li>
+        <li data-n="02">Fabergé</li>
+        <li data-n="03">Lalique</li>
+        <li data-n="04">Cristal de Paris</li>
+        <li data-n="05">S.T. Dupont</li>
+        <li data-n="06">MeisterSinger</li>
+        <li data-n="07">Junghans</li>
+        <li data-n="08" style="background:var(--emerald-tint);color:var(--emerald);font-size:.92rem;letter-spacing:.04em">Concessionari esclusivi Buccellati</li>
+      </ul>
     </div>
-    <div class="maison-marquee reveal" aria-label="Buccellati, Fabergé, Lalique, Cristal de Paris, S.T. Dupont, MeisterSinger, Junghans">
-      <div class="maison-track" id="maisonTrack">
-        <span>Buccellati</span><span>Fabergé</span><span>Lalique</span><span>Cristal de Paris</span><span>S.T. Dupont</span><span>MeisterSinger</span><span>Junghans</span>
-        <span aria-hidden="true">Buccellati</span><span aria-hidden="true">Fabergé</span><span aria-hidden="true">Lalique</span><span aria-hidden="true">Cristal de Paris</span><span aria-hidden="true">S.T. Dupont</span><span aria-hidden="true">MeisterSinger</span><span aria-hidden="true">Junghans</span>
-      </div>
-    </div>
-    <div class="wrap"><p class="maison-note reveal">Concessionari esclusivi <strong>Buccellati</strong></p></div>
   </section>
 
   <!-- COLLEZIONI -->
-  <section class="section section--alt" id="collezioni">
+  <section class="section section--panel" id="collezioni">
     <div class="wrap">
-      <div class="section-head section-head--center reveal">
-        <span class="eyebrow">Le Collezioni</span>
-        <h2>Gioielli, diamanti e argenteria</h2>
-        <div class="center-rule"></div>
+      <div class="section-head reveal">
+        <span class="idx">02</span>
+        <div>
+          <span class="kicker">Le Collezioni</span>
+          <h2>Gioielli, diamanti e argenteria</h2>
+        </div>
         <p class="lead">Pezzi unici e firmati, scelti e creati con la cura di chi conosce la materia.</p>
       </div>
       <div class="coll-grid">
         <figure class="coll reveal">
-          <div class="coll-ph"><img loading="lazy" src="../assets/img/jewel.jpg" width="900" height="900" alt="Anello di alta gioielleria con perla, diamanti e rubini"></div>
-          <figcaption><h3>Alta Gioielleria</h3><span>Oro · Diamanti · Pietre preziose</span></figcaption>
+          <div class="coll-ph"><span class="tag">01</span><img loading="lazy" src="../assets/img/jewel.jpg" width="900" height="900" alt="Anello di alta gioielleria con perla, diamanti e rubini"></div>
+          <figcaption><h3>Alta Gioielleria</h3><span>Oro · Diamanti<br>Pietre preziose</span></figcaption>
         </figure>
         <figure class="coll reveal">
-          <div class="coll-ph"><img loading="lazy" src="../assets/img/argenteria.jpg" width="1500" height="843" alt="Argenteria d'autore: oggetti e servizi in argento"></div>
-          <figcaption><h3>Argenteria d'Autore</h3><span>Contemporanea e d'epoca</span></figcaption>
+          <div class="coll-ph"><span class="tag">02</span><img loading="lazy" src="../assets/img/argenteria.jpg" width="1500" height="843" alt="Argenteria d'autore: oggetti e servizi in argento"></div>
+          <figcaption><h3>Argenteria d'Autore</h3><span>Contemporanea<br>e d'epoca</span></figcaption>
         </figure>
         <figure class="coll reveal">
-          <div class="coll-ph"><img loading="lazy" src="../assets/img/chevallier.jpg" width="1000" height="750" alt="Anello chevallier in oro con stemma araldico inciso"></div>
-          <figcaption><h3>Chevallier · Araldica</h3><span>Anelli e sigilli incisi a mano</span></figcaption>
+          <div class="coll-ph"><span class="tag">03</span><img loading="lazy" src="../assets/img/chevallier.jpg" width="1000" height="750" alt="Anello chevallier in oro con stemma araldico inciso"></div>
+          <figcaption><h3>Chevallier · Araldica</h3><span>Anelli e sigilli<br>incisi a mano</span></figcaption>
         </figure>
       </div>
     </div>
@@ -163,59 +178,57 @@
   <section class="section" id="creazioni">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="eyebrow">Creazioni &amp; Servizi</span>
-        <h2>Tutto ciò che custodiamo,<br>sotto un solo tetto</h2>
+        <span class="idx">03</span>
+        <div>
+          <span class="kicker">Creazioni &amp; Servizi</span>
+          <h2>Tutto ciò che custodiamo, sotto un solo tetto</h2>
+        </div>
+        <p class="lead">Dall'alta gioielleria all'argenteria d'epoca, dal diamante certificato al progetto su misura.</p>
       </div>
-      <div class="craft-list">
+      <div class="craft-grid">
         <article class="craft reveal">
-          <svg class="craft-ic" viewBox="0 0 48 48"><use href="#ic-ring"/></svg>
-          <div class="craft-body"><h3>Alta Gioielleria</h3><p>Gioielli unici e ricercati, pietre preziose rare e accostamenti cromatici d'autore, nell'alta manifattura artigianale italiana.</p></div>
-          <svg class="craft-arrow" viewBox="0 0 24 24"><use href="#ic-arrow"/></svg>
+          <div class="craft-top"><span class="idx">01</span><svg class="craft-ic" viewBox="0 0 48 48"><use href="#ic-ring"/></svg></div>
+          <h3>Alta Gioielleria</h3><p>Gioielli unici e ricercati, pietre preziose rare e accostamenti cromatici d'autore, nell'alta manifattura artigianale italiana.</p>
         </article>
         <article class="craft reveal">
-          <svg class="craft-ic" viewBox="0 0 48 48"><use href="#ic-diamond"/></svg>
-          <div class="craft-body"><h3>Diamanti &amp; Riviere</h3><p>Diamanti certificati, gioielli con diamanti e riviere, con la garanzia del nostro laboratorio gemmologico interno.</p></div>
-          <svg class="craft-arrow" viewBox="0 0 24 24"><use href="#ic-arrow"/></svg>
+          <div class="craft-top"><span class="idx">02</span><svg class="craft-ic" viewBox="0 0 48 48"><use href="#ic-diamond"/></svg></div>
+          <h3>Diamanti &amp; Riviere</h3><p>Diamanti certificati, gioielli con diamanti e riviere, con la garanzia del nostro laboratorio gemmologico interno.</p>
         </article>
         <article class="craft reveal">
-          <svg class="craft-ic" viewBox="0 0 48 48"><use href="#ic-silver"/></svg>
-          <div class="craft-body"><h3>Argenteria</h3><p>Argenteria contemporanea dei grandi marchi e argenteria d'epoca — teiere, vassoi, legumiere — dal '700 ai primi del '900.</p></div>
-          <svg class="craft-arrow" viewBox="0 0 24 24"><use href="#ic-arrow"/></svg>
+          <div class="craft-top"><span class="idx">03</span><svg class="craft-ic" viewBox="0 0 48 48"><use href="#ic-silver"/></svg></div>
+          <h3>Argenteria</h3><p>Argenteria contemporanea dei grandi marchi e argenteria d'epoca — teiere, vassoi, legumiere — dal '700 ai primi del '900.</p>
         </article>
         <article class="craft reveal">
-          <svg class="craft-ic" viewBox="0 0 48 48"><use href="#ic-crown"/></svg>
-          <div class="craft-body"><h3>Chevallier &amp; Araldica</h3><p>L'antico anello chevallier in molte varianti d'oro, a sigillo o inciso, con servizio interno di design araldico per stemmi e monogrammi.</p></div>
-          <svg class="craft-arrow" viewBox="0 0 24 24"><use href="#ic-arrow"/></svg>
+          <div class="craft-top"><span class="idx">04</span><svg class="craft-ic" viewBox="0 0 48 48"><use href="#ic-crown"/></svg></div>
+          <h3>Chevallier &amp; Araldica</h3><p>L'antico anello chevallier in molte varianti d'oro, a sigillo o inciso, con servizio interno di design araldico per stemmi e monogrammi.</p>
         </article>
         <article class="craft reveal">
-          <svg class="craft-ic" viewBox="0 0 48 48"><use href="#ic-loupe"/></svg>
-          <div class="craft-body"><h3>Progettazione su misura</h3><p>Dal disegno alla creazione: nuovi gioielli pensati con voi, o una foggia contemporanea per i vostri preziosi di famiglia.</p></div>
-          <svg class="craft-arrow" viewBox="0 0 24 24"><use href="#ic-arrow"/></svg>
+          <div class="craft-top"><span class="idx">05</span><svg class="craft-ic" viewBox="0 0 48 48"><use href="#ic-loupe"/></svg></div>
+          <h3>Progettazione su misura</h3><p>Dal disegno alla creazione: nuovi gioielli pensati con voi, o una foggia contemporanea per i vostri preziosi di famiglia.</p>
         </article>
         <article class="craft reveal">
-          <svg class="craft-ic" viewBox="0 0 48 48"><use href="#ic-watch"/></svg>
-          <div class="craft-body"><h3>Orologeria &amp; Accessori</h3><p>I monolancetta MeisterSinger e gli orologi Junghans Max Bill, la pelletteria S.T. Dupont e le cristallerie Lalique, Fabergé e Cristal de Paris.</p></div>
-          <svg class="craft-arrow" viewBox="0 0 24 24"><use href="#ic-arrow"/></svg>
+          <div class="craft-top"><span class="idx">06</span><svg class="craft-ic" viewBox="0 0 48 48"><use href="#ic-watch"/></svg></div>
+          <h3>Orologeria &amp; Accessori</h3><p>I monolancetta MeisterSinger e gli orologi Junghans Max Bill, la pelletteria S.T. Dupont e le cristallerie Lalique, Fabergé e Cristal de Paris.</p>
         </article>
       </div>
     </div>
   </section>
 
   <!-- LABORATORIO -->
-  <section class="section section--alt" id="laboratorio">
+  <section class="section section--panel" id="laboratorio">
     <div class="wrap split split--rev">
       <div class="reveal">
-        <span class="eyebrow">Laboratorio Gemmologico</span>
-        <h2>La certezza,<br>prima della bellezza.</h2>
+        <span class="kicker">04 — Laboratorio Gemmologico</span>
+        <h2>La certezza, prima della bellezza</h2>
         <p>Ogni diamante e ogni pietra di pregio viene esaminato nel nostro
           <strong>laboratorio di analisi gemmologica interno</strong>: una garanzia di
           trasparenza che mettiamo al servizio di chi sceglie Ballarino.</p>
         <p>Le perizie sono affidate a gemmologi diplomati presso il <strong>GIA</strong>
-          — Gemological Institute of America — e l'<strong>IGI</strong> di Anversa, fra i
-          massimi riferimenti mondiali nella classificazione delle gemme.</p>
-        <ul class="warrant-list">
+          e l'<strong>IGI</strong> di Anversa, fra i massimi riferimenti mondiali nella
+          classificazione delle gemme.</p>
+        <ul class="facts">
           <li><span>Diploma</span>GIA · Gemological Institute of America</li>
-          <li><span>Diploma</span>IGI · International Gemological Institute · Anversa</li>
+          <li><span>Diploma</span>IGI · International Gemological Institute, Anversa</li>
           <li><span>In sede</span>Analisi e perizia delle pietre preziose</li>
         </ul>
       </div>
@@ -224,18 +237,16 @@
   </section>
 
   <!-- ROYAL WARRANT -->
-  <section class="section" id="warrant">
+  <section class="section section--ink" id="warrant">
     <div class="wrap split">
       <div class="split-media reveal"><img loading="lazy" src="../assets/img/chevallier.jpg" width="1000" height="750" alt="Anello sigillo in oro con stemma della Real Casa di Savoia"></div>
       <div class="reveal">
-        <span class="eyebrow">Royal Warrant</span>
-        <h2>Fornitore della <span class="gilt">Real Casa</span>.</h2>
+        <span class="kicker">05 — Royal Warrant</span>
+        <h2>Fornitore della Real Casa</h2>
         <p>Un riconoscimento raro per una gioielleria di provincia: Ballarino è insignita del
           brevetto di <strong>Fornitore della Real Casa</strong>, concesso da S.A.R. il Principe
           Amedeo di Savoia, e dei brevetti delle Case Reali di Bulgaria e Portogallo.</p>
-        <p>Un'eredità di fiducia che custodiamo in ogni creazione — dall'incisione araldica al
-          gioiello su misura.</p>
-        <ul class="warrant-list">
+        <ul class="facts">
           <li><span>Casa Reale</span>Savoia-Aosta · brevetto n°15797</li>
           <li><span>Casa Reale</span>Bulgaria</li>
           <li><span>Casa Reale</span>Portogallo</li>
@@ -245,17 +256,17 @@
   </section>
 
   <!-- SAVOY LINE -->
-  <section class="section section--alt" id="savoy">
+  <section class="section" id="savoy">
     <div class="wrap split">
       <div class="reveal">
-        <span class="eyebrow">Savoy Line</span>
+        <span class="kicker">06 — Savoy Line</span>
         <h2>La collezione ispirata ai Savoia</h2>
         <p class="lead">Pezzi unici e numerati, realizzati interamente a mano e ispirati alla
           storia della Real Casa italiana. Una linea esclusiva, già esposta al
           <strong>Museo del Gioiello di Vicenza</strong>.</p>
         <div class="stats">
           <div><div class="n">Unici</div><div class="l">Pezzi irripetibili</div></div>
-          <div><div class="n">Numerati</div><div class="l">Edizione controllata</div></div>
+          <div><div class="n">N°</div><div class="l">Edizione numerata</div></div>
           <div><div class="n">Vicenza</div><div class="l">Museo del Gioiello</div></div>
         </div>
       </div>
@@ -264,11 +275,11 @@
   </section>
 
   <!-- STORIA -->
-  <section class="section" id="storia">
+  <section class="section section--panel" id="storia">
     <div class="wrap split split--rev">
       <div class="reveal">
-        <span class="eyebrow">La Storia</span>
-        <h2>La mano di un<br>maestro orafo.</h2>
+        <span class="kicker">07 — La Storia</span>
+        <h2>La mano di un maestro orafo</h2>
         <p>Era il 1988 quando un giovanissimo <strong>Giovanni Battista Ballarino</strong>, sotto
           l'attenta guida del Maestro braidese <strong>Giuseppe Sbodio</strong>, realizzava il suo
           capolavoro e veniva consacrato Orafo. Da allora il nome Ballarino è sinonimo di qualità,
@@ -291,25 +302,22 @@
   </section>
 
   <!-- CONTATTI -->
-  <section class="section section--alt" id="contatti">
+  <section class="section section--ink" id="contatti">
     <div class="wrap form-wrap">
       <div class="form-intro reveal">
-        <span class="eyebrow">Contatti</span>
-        <h2>Vieni a trovarci<br>in boutique.</h2>
+        <span class="kicker">08 — Contatti</span>
+        <h2>Vieni a trovarci in boutique</h2>
         <p>Ti aspettiamo in Via Giolitti 58, a Cavour. Scrivici per un appuntamento, una
           valutazione o una creazione su misura: ti rispondiamo noi.</p>
         <ul class="contact-list">
-          <li><span class="foot-label">Indirizzo</span><a href="https://maps.google.com/?q=Ballarino+Gioielli+Via+Giolitti+58+Cavour" target="_blank" rel="noopener">Via G. Giolitti 58 · 10061 Cavour (TO)</a></li>
-          <li><span class="foot-label">Telefono</span><a href="tel:+39012169282">0121 69282</a></li>
-          <li><span class="foot-label">Email</span><a href="mailto:info@ballarinogioielli.com">info@ballarinogioielli.com</a></li>
-          <li><span class="foot-label">Orari</span>Martedì–Sabato · 9.00–12.30 / 15.00–19.30</li>
+          <li><span>Indirizzo</span><a href="https://maps.google.com/?q=Ballarino+Gioielli+Via+Giolitti+58+Cavour" target="_blank" rel="noopener">Via G. Giolitti 58 · 10061 Cavour (TO)</a></li>
+          <li><span>Telefono</span><a href="tel:+39012169282">0121 69282</a></li>
+          <li><span>Email</span><a href="mailto:info@ballarinogioielli.com">info@ballarinogioielli.com</a></li>
+          <li><span>Orari</span>Martedì–Sabato · 9.00–12.30 / 15.00–19.30</li>
         </ul>
       </div>
       <form class="contact-form reveal" id="contactForm" novalidate>
-        <div class="field">
-          <label for="cf-nome">Nome e cognome</label>
-          <input id="cf-nome" name="nome" type="text" autocomplete="name" required>
-        </div>
+        <div class="field"><label for="cf-nome">Nome e cognome</label><input id="cf-nome" name="nome" type="text" autocomplete="name" required></div>
         <div class="field-row">
           <div class="field"><label for="cf-tel">Telefono</label><input id="cf-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel"></div>
           <div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" autocomplete="email"></div>
@@ -317,16 +325,16 @@
         <div class="field"><label for="cf-msg">Il tuo messaggio</label><textarea id="cf-msg" name="messaggio" rows="4" required></textarea></div>
         <p class="form-error" id="cfError" role="alert" hidden>Inserisci almeno il nome e un messaggio.</p>
         <div class="form-actions">
-          <button type="submit" class="btn btn--solid">Invia richiesta</button>
-          <a class="btn" href="tel:+39012169282">Chiama lo 0121 69282</a>
+          <button type="submit" class="btn btn--solid">Invia richiesta <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><use href="#ic-arrow"/></svg></button>
+          <a class="btn" href="tel:+39012169282" style="border-color:rgba(255,255,255,.4);color:#fff">Chiama lo 0121 69282</a>
         </div>
-        <p class="form-note">Si aprirà la tua app email con il messaggio già pronto per Ballarino Gioielli.</p>
+        <p class="form-note" style="color:rgba(255,255,255,.55)">Si aprirà la tua app email con il messaggio già pronto per Ballarino Gioielli.</p>
       </form>
     </div>
     <div class="wrap">
       <div class="foot-map reveal">
         <div id="map" class="foot-map__canvas" role="img" aria-label="Mappa — Ballarino Gioielli, Via G. Giolitti 58, Cavour"></div>
-        <a class="foot-map__link" href="https://maps.google.com/?q=Ballarino+Gioielli+Via+Giolitti+58+Cavour" target="_blank" rel="noopener">Indicazioni su Google Maps →</a>
+        <a class="foot-map__link" href="https://maps.google.com/?q=Ballarino+Gioielli+Via+Giolitti+58+Cavour" target="_blank" rel="noopener">Indicazioni su Google Maps <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><use href="#ic-arrow"/></svg></a>
       </div>
     </div>
   </section>
@@ -335,7 +343,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <div class="foot-grid">
+    <div class="foot-top">
       <div class="foot-about">
         <h4>Ballarino Gioielli</h4>
         <p>Alta gioielleria, diamanti e argenteria d'autore. Fornitore della Real Casa, dal 1996 nella piazza centrale di Cavour.</p>
@@ -389,30 +397,29 @@
   const reveal=()=>document.body.classList.add('is-loaded');
   requestAnimationFrame(reveal);addEventListener('load',reveal);setTimeout(reveal,400);
 
-  // header + barra d'avanzamento
+  // header + progress
   const header=document.querySelector('.site-header'),bar=document.getElementById('scrollProgress');
   function onScroll(){const y=scrollY||0;header.classList.toggle('scrolled',y>20);
     const h=document.documentElement.scrollHeight-innerHeight;bar.style.width=(h>0?y/h*100:0)+'%';}
   addEventListener('scroll',onScroll,{passive:true});onScroll();
 
-  // faretto che segue il puntatore (firma noir)
-  const spot=document.getElementById('spotlight');
-  if(!reduce&&matchMedia('(pointer:fine)').matches){
-    let tx=70,ty=14,cx=70,cy=14,raf=0;
-    addEventListener('pointermove',e=>{tx=e.clientX/innerWidth*100;ty=e.clientY/innerHeight*100;
-      if(!raf)raf=requestAnimationFrame(loop);},{passive:true});
-    function loop(){raf=0;cx+=(tx-cx)*.12;cy+=(ty-cy)*.12;
-      spot.style.setProperty('--mx',cx.toFixed(2)+'%');spot.style.setProperty('--my',cy.toFixed(2)+'%');
-      if(Math.abs(tx-cx)>.1||Math.abs(ty-cy)>.1)raf=requestAnimationFrame(loop);}
-  }
+  // indice laterale: evidenzia la sezione attiva
+  const chapterLinks=[...document.querySelectorAll('.chapters a')];
+  const ids=chapterLinks.map(a=>a.getAttribute('href').slice(1));
+  const navByEntry=new Map();
+  const spy=new IntersectionObserver((es)=>{es.forEach(e=>{
+    if(e.isIntersecting){const id=e.target.id;
+      chapterLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+id));}
+  })},{rootMargin:'-45% 0px -50% 0px',threshold:0});
+  ids.forEach(id=>{const el=document.getElementById(id);if(el)spy.observe(el);});
 
   // reveal a cascata
   const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){
     e.target.style.setProperty('--rd',(e.target.dataset.rd||0)+'ms');
-    e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.14,rootMargin:'0px 0px -8% 0px'});
+    e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-  document.querySelectorAll('.coll-grid,.craft-list').forEach(g=>{
-    [...g.children].forEach((c,i)=>{if(c.classList.contains('reveal'))c.dataset.rd=i*90;});});
+  document.querySelectorAll('.coll-grid,.craft-grid,.maison-grid').forEach(g=>{
+    [...g.children].forEach((c,i)=>{if(c.classList.contains('reveal'))c.dataset.rd=i*80;});});
 
   // conteggio numeri
   if(!reduce){
@@ -449,11 +456,11 @@
     var el=document.getElementById('map');if(!el||!window.L)return;
     var lat=44.7848,lng=7.3708;
     var map=L.map(el,{scrollWheelZoom:false,zoomControl:true}).setView([lat,lng],16);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{
       maxZoom:20,subdomains:'abcd',
       attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'}).addTo(map);
-    var pin=L.divIcon({className:'gold-pin',iconSize:[34,44],iconAnchor:[17,44],popupAnchor:[0,-40],
-      html:'<svg width="34" height="44" viewBox="0 0 24 24" fill="#e3c987" stroke="#0b0a11" stroke-width="0.6"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.6" fill="#0b0a11" stroke="none"/></svg>'});
+    var pin=L.divIcon({className:'em-pin',iconSize:[34,44],iconAnchor:[17,44],popupAnchor:[0,-40],
+      html:'<svg width="34" height="44" viewBox="0 0 24 24" fill="#0e5c41" stroke="#f4f3ee" stroke-width="0.6"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.6" fill="#f4f3ee" stroke="none"/></svg>'});
     L.marker([lat,lng],{icon:pin,title:'Ballarino Gioielli'}).addTo(map).bindPopup('<strong>Ballarino Gioielli</strong><br>Via G. Giolitti 58 · Cavour');
   });
 </script>
